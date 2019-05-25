@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import MazuSDK
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let mazu = Mazu()
+        mazu.getMazuImage()
+        
     }
 
 

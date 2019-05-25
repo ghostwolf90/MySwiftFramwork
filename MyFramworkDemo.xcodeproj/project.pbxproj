@@ -12,9 +12,25 @@
 		5F7AE3E6229589870072B15B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F7AE3E4229589870072B15B /* Main.storyboard */; };
 		5F7AE3E82295898A0072B15B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F7AE3E72295898A0072B15B /* Assets.xcassets */; };
 		5F7AE3EB2295898A0072B15B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F7AE3E92295898A0072B15B /* LaunchScreen.storyboard */; };
+		5FD3315B2295AD060060372E /* MazuSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FD3315A2295AD060060372E /* MazuSDK.framework */; };
+		6A10B73ACFAF8BC6E98E5D90 /* Pods_MyFramworkDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F987E030B6E90AD612F426EF /* Pods_MyFramworkDemo.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5FD3315522958AAD0060372E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		555D92B5A9EA9BED42E7D5B2 /* Pods-MyFramworkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFramworkDemo.debug.xcconfig"; path = "Target Support Files/Pods-MyFramworkDemo/Pods-MyFramworkDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		5F7AE3DD229589870072B15B /* MyFramworkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFramworkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F7AE3E0229589870072B15B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F7AE3E2229589870072B15B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +38,9 @@
 		5F7AE3E72295898A0072B15B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F7AE3EA2295898A0072B15B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F7AE3EC2295898A0072B15B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FD3315A2295AD060060372E /* MazuSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MazuSDK.framework; path = "../../../Library/Developer/Xcode/DerivedData/MyFramworkDemo-bztvehvheprqbqfowikapnhdiwar/Build/Products/Debug-iphonesimulator/MazuSDK.framework"; sourceTree = "<group>"; };
+		D1388128797D362C2C7996C0 /* Pods-MyFramworkDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFramworkDemo.release.xcconfig"; path = "Target Support Files/Pods-MyFramworkDemo/Pods-MyFramworkDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F987E030B6E90AD612F426EF /* Pods_MyFramworkDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFramworkDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +48,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FD3315B2295AD060060372E /* MazuSDK.framework in Frameworks */,
+				6A10B73ACFAF8BC6E98E5D90 /* Pods_MyFramworkDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45CEFDA54D16919D2959AA86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F987E030B6E90AD612F426EF /* Pods_MyFramworkDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5F7AE3D4229589870072B15B = {
 			isa = PBXGroup;
 			children = (
 				5F7AE3DF229589870072B15B /* MyFramworkDemo */,
 				5F7AE3DE229589870072B15B /* Products */,
+				9EAB133DF7D4DB7D454B5179 /* Pods */,
+				45CEFDA54D16919D2959AA86 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +85,7 @@
 		5F7AE3DF229589870072B15B /* MyFramworkDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5FD3315A2295AD060060372E /* MazuSDK.framework */,
 				5F7AE3E0229589870072B15B /* AppDelegate.swift */,
 				5F7AE3E2229589870072B15B /* ViewController.swift */,
 				5F7AE3E4229589870072B15B /* Main.storyboard */,
@@ -64,6 +96,15 @@
 			path = MyFramworkDemo;
 			sourceTree = "<group>";
 		};
+		9EAB133DF7D4DB7D454B5179 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				555D92B5A9EA9BED42E7D5B2 /* Pods-MyFramworkDemo.debug.xcconfig */,
+				D1388128797D362C2C7996C0 /* Pods-MyFramworkDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F7AE3EF2295898A0072B15B /* Build configuration list for PBXNativeTarget "MyFramworkDemo" */;
 			buildPhases = (
+				937EF81D348D73108DA434F5 /* [CP] Check Pods Manifest.lock */,
 				5F7AE3D9229589870072B15B /* Sources */,
 				5F7AE3DA229589870072B15B /* Frameworks */,
 				5F7AE3DB229589870072B15B /* Resources */,
+				5FD3315522958AAD0060372E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +172,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		937EF81D348D73108DA434F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyFramworkDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5F7AE3D9229589870072B15B /* Sources */ = {
@@ -280,6 +348,7 @@
 		};
 		5F7AE3F02295898A0072B15B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 555D92B5A9EA9BED42E7D5B2 /* Pods-MyFramworkDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -289,6 +358,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = www.laibit.com.MyFramworkDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -298,6 +368,7 @@
 		};
 		5F7AE3F12295898A0072B15B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1388128797D362C2C7996C0 /* Pods-MyFramworkDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -307,6 +378,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = www.laibit.com.MyFramworkDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
